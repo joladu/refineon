@@ -11,9 +11,7 @@ import butterknife.Unbinder;
 import me.yokeyword.fragmentation.SupportActivity;
 
 
-/**
- * Common simple Activity
- */
+
 
 public abstract class AbstractSimpleActivity extends SupportActivity {
 

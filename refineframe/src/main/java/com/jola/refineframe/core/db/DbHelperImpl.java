@@ -5,8 +5,13 @@ import com.jola.refineframe.core.dao.HistoryData;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 public class DbHelperImpl implements DbHelper {
 
+    @Inject
+    public DbHelperImpl() {
+    }
 
     @Override
     public List<HistoryData> addHistoryData(String data) {

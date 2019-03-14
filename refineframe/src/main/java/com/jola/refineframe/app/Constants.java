@@ -5,6 +5,16 @@ import java.io.File;
 
 public class Constants {
 
+
+    public static final long DOUBLE_INTERVAL_TIME = 2000;
+
+    public static final long CACHE_SIZE = 1024 * 1024 * 50;
+
+    //    4 周
+    public static final int CACHE_TIME = 60 * 60 * 24 * 28;
+
+
+
     public static final String MY_SHARED_PREFERENCE = "shared_preference";
 
 
@@ -15,10 +25,6 @@ public class Constants {
 
     public static final String PATH_CACHE = PATH_DATA + "/NetCache";
 
-    public static final long CACHE_SIZE = 1024 * 1024 * 50;
-
-//    4 周
-    public static final int CACHE_TIME = 60 * 60 * 24 * 28;
 
 
     /**

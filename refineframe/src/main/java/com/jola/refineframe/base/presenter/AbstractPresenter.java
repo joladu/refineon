@@ -4,33 +4,77 @@ import com.jola.refineframe.base.view.AbstractView;
 
 import io.reactivex.disposables.Disposable;
 
-/**
- * Created by lenovo on 2019/3/13.
- */
+
 
 public interface AbstractPresenter<T extends AbstractView> {
 
+    /**
+     * 注入View
+     *
+     * @param view view
+     */
     void attachView(T view);
 
+    /**
+     * 回收View
+     */
     void detachView();
 
-    void addRxBingingSubscribe(Disposable disposable);
+    /**
+     * Add rxBing subscribe manager
+     *
+     * @param disposable Disposable
+     */
+    void addRxBindingSubscribe(Disposable disposable);
 
-    boolean getIsNightMode();
+    /**
+     * Get night mode state
+     *
+     * @return if is night mode
+     */
+    boolean getNightModeState();
 
-    boolean  getLoginStatus();
+    /**
+     * Set login status
+     *
+     * @param loginStatus login status
+     */
+    void setLoginStatus(boolean loginStatus);
 
-    String getLoginAccout();
+    /**
+     * Get login status
+     *
+     * @return if is login status
+     */
+    boolean getLoginStatus();
 
-    void setLoginAccount();
+    /**
+     * Get login account
+     *
+     * @return login account
+     */
+    String getLoginAccount();
 
+    /**
+     * Set login status
+     *
+     * @param account account
+     */
+    void setLoginAccount(String account);
 
+    /**
+     * Set login password
+     *
+     * @param password password
+     */
+    void setLoginPassword(String password);
 
-
-
-
-
-
+    /**
+     * Get current page
+     *
+     * @return current page
+     */
+    int getCurrentPage();
 
 
 }

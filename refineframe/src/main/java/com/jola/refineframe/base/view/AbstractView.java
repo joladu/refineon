@@ -19,7 +19,7 @@ public interface AbstractView {
 
     void showLogoutView();
 
-    void showToast();
+    void showToast(String msg);
 
     void showSnackBar(String msg);
 

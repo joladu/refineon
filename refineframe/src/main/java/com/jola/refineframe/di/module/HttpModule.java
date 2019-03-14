@@ -42,6 +42,8 @@ public class HttpModule {
         return retrofit.create(Apis.class);
     }
 
+
+
     @Singleton
     @Provides
     @MainUrlQualifier
@@ -68,6 +70,7 @@ public class HttpModule {
             HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
             loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BASIC);
             builder.addInterceptor(loggingInterceptor);
+//            使用stetho 工具调试
 //            builder.addNetworkInterceptor(new StethoInterceptor());
         }
         File cacheFile = new File(Constants.PATH_CACHE);
