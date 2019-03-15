@@ -13,6 +13,11 @@ public class Constants {
     //    4 周
     public static final int CACHE_TIME = 60 * 60 * 24 * 28;
 
+    /**
+     * Avoid double click time area
+     */
+    public static final long CLICK_TIME_AREA = 1000;
+
 
 
     public static final String MY_SHARED_PREFERENCE = "shared_preference";

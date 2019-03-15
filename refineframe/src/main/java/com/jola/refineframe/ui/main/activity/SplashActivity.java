@@ -24,8 +24,7 @@ public class SplashActivity extends BaseActivity<SplashPresenter> implements Spl
 
     @Override
     protected int getLayoutId() {
-//        return R.layout.activity_splash;
-        return 1;
+        return R.layout.activity_splash;
     }
 
     @Override
@@ -44,7 +43,7 @@ public class SplashActivity extends BaseActivity<SplashPresenter> implements Spl
 
     @Override
     public void jumpToMain() {
-//        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, LoginActivity.class));
         finish();
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }

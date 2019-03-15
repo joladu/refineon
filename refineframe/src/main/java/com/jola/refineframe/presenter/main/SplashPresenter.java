@@ -26,7 +26,7 @@ public class SplashPresenter extends BasePresenter<SplashContract.View> implemen
     @Override
     public void attachView(SplashContract.View view) {
         super.attachView(view);
-        long splashTime = 2000;
+        long splashTime = 1000;
         addSubscribe(Observable.timer(splashTime, TimeUnit.MILLISECONDS)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(aLong -> view.jumpToMain()));

@@ -2,7 +2,29 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">RefineFrame</string>
 
+
+
+    <string name="http_error">网络异常</string>
+    <string name="unKnown_error">未知错误</string>
+
     <string name="double_click_exit_tint">再按一次后退键退出GeeksAndroid</string>
+
+    <string name="account_password_null_tint">用户名或密码不能为空</string>
+
+    <string name="login_in">登录</string>
+    <string name="login_account_tint">请输入用户名</string>
+    <string name="login_password_tint">请输入密码</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_success">登录成功</string>
+
+    <string name="register">注册</string>
+
+
+    <string name="or">或</string>
+
+
+
+
 
 
 
